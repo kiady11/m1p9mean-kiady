@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "frontend-E-kaly"
+  "defaultProject": "frontend-E-kaly",
+  "cli": {
+    "analytics": "a0589624-df65-4067-9c5d-903ca5d3c061"
+  }
 }
