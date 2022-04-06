@@ -44,6 +44,7 @@ app.get('/', (req, res) => {
 });
  
 app.get('*', (req, res) => {
+  console.log("xxx:", __dirname);
   res.sendFile(path.join(__dirname, 'dist/frontend-E-kaly/index.html'));
 });
  

@@ -17,7 +17,7 @@ export class AddPlatsComponent implements OnInit {
     private router: Router,
     private ngZone: NgZone,
     private crudService: CrudService
-  ) { 
+  ) {
     this.platForm = this.formBuilder.group({
       nom: [''],
       prix: [''],
@@ -33,7 +33,7 @@ export class AddPlatsComponent implements OnInit {
     this.crudService.addPlat(this.platForm.value)
     .subscribe(() => {
         console.log('Data added successfully!')
-        this.ngZone.run(() => this.router.navigateByUrl('/plats-list'))
+        this.ngZone.run(() => this.router.navigateByUrl('/list-plats'))
       }, (err) => {
         console.log(err);
     });
