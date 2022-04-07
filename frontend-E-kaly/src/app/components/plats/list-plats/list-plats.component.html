@@ -7,7 +7,7 @@
       <table class="table table-bordered">
         <thead>
           <tr>
-            <th scope="col">Id</th>
+            <th scope="col" hidden>Id</th>
             <th scope="col">Nom</th>
             <th scope="col">Prix</th>
             <th scope="col">Ingredients</th>
@@ -17,10 +17,10 @@
         </thead>
         <tbody>
           <tr *ngFor="let plat of Plats; let i = index">
-            <th scope="row">{{plat._id}}</th>
+            <th scope="row" hidden>{{plat._id}}</th>
             <td>{{plat.nom}}</td>
             <td>{{plat.prix}}</td>
-            <td>{{plat.ingrdients}}</td>
+            <td>{{plat.ingredients}}</td>
             <td>{{plat.restaurant}}</td>
             <td class="text-center">
               <button class="btn btn-sm btn-primary" routerLink="/edit-plat/{{plat._id}}">Edit</button>

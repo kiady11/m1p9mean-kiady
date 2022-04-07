@@ -7,7 +7,7 @@ import { Plat } from '../models/plat';
 @Injectable({
   providedIn: 'root'
 })
-export class CrudService {
+export class PlatServiceService {
 
   // Node/Express API
   REST_API: string = 'http://localhost:3000/api';
@@ -37,17 +37,16 @@ export class CrudService {
         })
       )
   }
- 
+
   // Update
   updatePlat(id:any, data:any): Observable<any> {
     let API_URL = `${this.REST_API}/update-plat/${id}`;
     return this.httpClient.put(API_URL, data, { headers: this.httpHeaders })
   }
- 
+
   // Delete
   deletePlat(id:any): Observable<any> {
     let API_URL = `${this.REST_API}/delete-plat/${id}`;
     return this.httpClient.delete(API_URL, { headers: this.httpHeaders})
   }
-
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CrudService } from 'src/app/service/crud.service';
+import { PlatServiceService } from 'src/app/service/plat-service.service';
 
 
 @Component({
@@ -10,20 +10,20 @@ import { CrudService } from 'src/app/service/crud.service';
 export class ListPlatsComponent implements OnInit {
 
   Plats:any = [];
-  
-  constructor( private crudService: CrudService) { }
+
+  constructor( private platService: PlatServiceService) { }
 
   ngOnInit(): void {
-    this.crudService.getPlats().subscribe(res => {
+    this.platService.getPlats().subscribe(res => {
       console.log(res)
       this.Plats =res;
-    }); 
+    });
   }
 
   delete(id:any, i:any) {
     console.log(id);
     if(window.confirm('Do you want to go ahead?')) {
-      this.crudService.deletePlat(id).subscribe((res) => {
+      this.platService.deletePlat(id).subscribe((res) => {
         this.Plats.splice(i, 1);
       })
     }

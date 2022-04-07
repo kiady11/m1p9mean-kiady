@@ -1,7 +1,7 @@
 import { Component, OnInit, NgZone } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
-import { CrudService } from 'src/app/service/crud.service';
+import { PlatServiceService } from 'src/app/service/plat-service.service';
 
 @Component({
   selector: 'app-add-plats',
@@ -16,7 +16,7 @@ export class AddPlatsComponent implements OnInit {
     public formBuilder: FormBuilder,
     private router: Router,
     private ngZone: NgZone,
-    private crudService: CrudService
+    private platService: PlatServiceService
   ) {
     this.platForm = this.formBuilder.group({
       nom: [''],
@@ -30,7 +30,7 @@ export class AddPlatsComponent implements OnInit {
   }
 
   onSubmit(): any {
-    this.crudService.addPlat(this.platForm.value)
+    this.platService.addPlat(this.platForm.value)
     .subscribe(() => {
         console.log('Data added successfully!')
         this.ngZone.run(() => this.router.navigateByUrl('/list-plats'))
