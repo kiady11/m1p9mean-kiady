@@ -9,15 +9,16 @@ import { PlatServiceService } from 'src/app/service/plat-service.service';
 })
 export class ListPlatsComponent implements OnInit {
 
-  Plats:any = [];
+  Plats:any;
 
   constructor( private platService: PlatServiceService) { }
 
   ngOnInit(): void {
-    this.platService.getPlats().subscribe(res => {
-      console.log(res)
-      this.Plats =res;
-    });
+    // this.platService.getPlats().subscribe(res => {
+    //   console.log(res)
+    //   this.Plats =res;
+    // });
+    this.Plats = this.platService.getPlats();
   }
 
   delete(id:any, i:any) {

@@ -19,6 +19,7 @@ export class AddPlatsComponent implements OnInit {
     private platService: PlatServiceService
   ) {
     this.platForm = this.formBuilder.group({
+      photo: [''],
       nom: [''],
       prix: [''],
       ingredients: [''],

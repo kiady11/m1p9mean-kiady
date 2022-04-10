@@ -17,6 +17,51 @@ export class PlatServiceService {
 
   constructor(private httpClient: HttpClient) { }
 
+  food = [
+    {
+      id:1,
+      nom:"Paneer Grilled Sandwich",
+      ingredients:"Pan-fried masala paneer.",
+      prix:200,
+      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wzfq7djolqxgdhghebbq"
+    },
+    {
+      id:2,
+      nom:"Veggie Supreme",
+      ingredients:"Onion| Green Capsicum|Mushroom |black olives , sweet corn , Red Paprika topped with Cheese",
+      prix:369,
+      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/sgbobtbxlojbtdnr2m5k"
+    },
+    {
+      id:3,
+      nom:"Paneer Burger",
+      ingredients:"panner",
+      prix:149,
+      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/xbeqlsck3p0kei53to7k"
+    },
+    {
+      id:4,
+      nom:"Veg Masala Roll In Naan",
+      ingredients:"A homely mix of mashed potato and veggies, seasoned with Indian spices. A filling sure to take you back to mom's kitchen.",
+      prix:140,
+      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/l2ng6gtge30sqaafqng7"
+    },
+    {
+      id:5,
+      nom:"Indulgence Brownie",
+      ingredients:"(Eggless) Indulge in richly decadent chocolate brownie crafted with love & topped with bitter-sweet chocolate that provides ultra-rich chocolate experience.",
+      prix:105,
+      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/iqlmbg1hlyc0dspdyzzv"
+    },
+    {
+      id:6,
+      nom:"Oreo Cheesecake Ice Cream",
+      ingredients:"Oreo ice cream",
+      prix:219,
+      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wtj8esaeslvlscv8glj6"
+    }
+  ];
+
   // Add
   addPlat(data: Plat): Observable<any> {
     let API_URL = `${this.REST_API}/add-plat`;
@@ -25,7 +70,8 @@ export class PlatServiceService {
 
   // Get all objects
   getPlats() {
-    return this.httpClient.get(`${this.REST_API}`);
+    // return this.httpClient.get(`${this.REST_API}`);
+    return this.food;
   }
 
   // Get single object
