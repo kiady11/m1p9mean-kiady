@@ -14,11 +14,11 @@ export class ListPlatsComponent implements OnInit {
   constructor( private platService: PlatServiceService) { }
 
   ngOnInit(): void {
-    // this.platService.getPlats().subscribe(res => {
-    //   console.log(res)
-    //   this.Plats =res;
-    // });
-    this.Plats = this.platService.getPlats();
+    this.platService.getPlats().subscribe(res => {
+      console.log(res)
+      this.Plats =res;
+    });
+    // this.Plats = this.platService.getPlats();
   }
 
   delete(id:any, i:any) {

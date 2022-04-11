@@ -54,7 +54,119 @@ export class PlatServiceService {
       foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/iqlmbg1hlyc0dspdyzzv"
     },
     {
-      id:6,
+      id:7,
+      nom:"Oreo Cheesecake Ice Cream",
+      ingredients:"Oreo ice cream",
+      prix:219,
+      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wtj8esaeslvlscv8glj6"
+    },
+    {
+      id:8,
+      nom:"Oreo Cheesecake Ice Cream",
+      ingredients:"Oreo ice cream",
+      prix:219,
+      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wtj8esaeslvlscv8glj6"
+    },
+    {
+      id:9,
+      nom:"Oreo Cheesecake Ice Cream",
+      ingredients:"Oreo ice cream",
+      prix:219,
+      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wtj8esaeslvlscv8glj6"
+    },
+    {
+      id:10,
+      nom:"Oreo Cheesecake Ice Cream",
+      ingredients:"Oreo ice cream",
+      prix:219,
+      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wtj8esaeslvlscv8glj6"
+    },
+    {
+      id:11,
+      nom:"Oreo Cheesecake Ice Cream",
+      ingredients:"Oreo ice cream",
+      prix:219,
+      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wtj8esaeslvlscv8glj6"
+    },
+    {
+      id:12,
+      nom:"Oreo Cheesecake Ice Cream",
+      ingredients:"Oreo ice cream",
+      prix:219,
+      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wtj8esaeslvlscv8glj6"
+    },
+    {
+      id:13,
+      nom:"Oreo Cheesecake Ice Cream",
+      ingredients:"Oreo ice cream",
+      prix:219,
+      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wtj8esaeslvlscv8glj6"
+    },
+    {
+      id:14,
+      nom:"Oreo Cheesecake Ice Cream",
+      ingredients:"Oreo ice cream",
+      prix:219,
+      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wtj8esaeslvlscv8glj6"
+    },
+    {
+      id:15,
+      nom:"Oreo Cheesecake Ice Cream",
+      ingredients:"Oreo ice cream",
+      prix:219,
+      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wtj8esaeslvlscv8glj6"
+    },
+    {
+      id:17,
+      nom:"Oreo Cheesecake Ice Cream",
+      ingredients:"Oreo ice cream",
+      prix:219,
+      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wtj8esaeslvlscv8glj6"
+    },
+    {
+      id:18,
+      nom:"Oreo Cheesecake Ice Cream",
+      ingredients:"Oreo ice cream",
+      prix:219,
+      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wtj8esaeslvlscv8glj6"
+    },
+    {
+      id:19,
+      nom:"Oreo Cheesecake Ice Cream",
+      ingredients:"Oreo ice cream",
+      prix:219,
+      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wtj8esaeslvlscv8glj6"
+    },
+    {
+      id:20,
+      nom:"Oreo Cheesecake Ice Cream",
+      ingredients:"Oreo ice cream",
+      prix:219,
+      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wtj8esaeslvlscv8glj6"
+    },
+    {
+      id:21,
+      nom:"Oreo Cheesecake Ice Cream",
+      ingredients:"Oreo ice cream",
+      prix:219,
+      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wtj8esaeslvlscv8glj6"
+    },
+    {
+      id:22,
+      nom:"Oreo Cheesecake Ice Cream",
+      ingredients:"Oreo ice cream",
+      prix:219,
+      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wtj8esaeslvlscv8glj6"
+    },
+    {
+      id:23,
+      nom:"Oreo Cheesecake Ice Cream",
+      ingredients:"Oreo ice cream",
+      prix:219,
+      foodImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wtj8esaeslvlscv8glj6"
+    },
+    {
+      id:24,
       nom:"Oreo Cheesecake Ice Cream",
       ingredients:"Oreo ice cream",
       prix:219,
@@ -70,8 +182,8 @@ export class PlatServiceService {
 
   // Get all objects
   getPlats() {
-    // return this.httpClient.get(`${this.REST_API}`);
-    return this.food;
+    return this.httpClient.get(`${this.REST_API}`);
+    // return this.food;
   }
 
   // Get single object

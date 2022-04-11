@@ -18,7 +18,7 @@
         </thead>
         <tbody>
           <tr *ngFor="let plat of Plats; let i = index">
-            <th scope="row" hidden>{{plat.id}}</th>
+            <th scope="row" hidden>{{plat._id}}</th>
             <td><img src="{{plat.foodImg}}"></td>
             <td>{{plat.nom}}</td>
             <td>{{plat.prix}}</td>
@@ -26,7 +26,7 @@
             <td>{{plat.restaurant}}</td>
             <td class="text-center">
               <button mat-icon-button color="primary" routerLink="/edit-plat/{{plat.id}}"><mat-icon>edit</mat-icon></button>
-              <button mat-icon-button color="warn" (click)="delete(plat.id, i)"><mat-icon>delete</mat-icon></button>
+              <button mat-icon-button color="warn" (click)="delete(plat._id, i)"><mat-icon>delete</mat-icon></button>
           </tr>
         </tbody>
       </table>

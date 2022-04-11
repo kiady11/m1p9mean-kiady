@@ -33,8 +33,8 @@ export class AddPlatsComponent implements OnInit {
   onSubmit(): any {
     this.platService.addPlat(this.platForm.value)
     .subscribe(() => {
-        console.log('Data added successfully!')
-        this.ngZone.run(() => this.router.navigateByUrl('/list-plats'))
+      console.log('Data added successfully!')
+      this.ngZone.run(() => this.router.navigateByUrl('/list-plats'))
       }, (err) => {
         console.log(err);
     });

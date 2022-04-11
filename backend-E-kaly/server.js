@@ -13,6 +13,7 @@ mongoose.connect(mongoDb.db).then(() => {
 });
 
 const platRoute = require('./routes/plat.route');
+const userRoute = require('./routes/user.route');
 
 const app = express();
 app.use(bodyParser.json());
@@ -24,7 +25,8 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'dist/frontend-E-kaly')));
 
 // API root 
-app.use('/api', platRoute)
+app.use('/api', platRoute);
+app.use('/api', userRoute);
 
 // PORT 
 const port = 3000;
@@ -44,7 +46,6 @@ app.get('/', (req, res) => {
 });
  
 app.get('*', (req, res) => {
-  console.log("xxx:", __dirname);
   res.sendFile(path.join(__dirname, 'dist/frontend-E-kaly/index.html'));
 });
  

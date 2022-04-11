@@ -1,11 +1,28 @@
 <p>
   <mat-toolbar>
     <span>E-kaly</span>
-    <span>Admin restaurant</span>
     <span class="example-spacer"></span>
 
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
-      <mat-icon>account_circle</mat-icon>
-    </button>
+    <form class="example-form">
+      <mat-form-field class="example-full-width">
+        <span matPrefix> </span>
+        <input type="tel" matInput name="search">
+        <button matSuffix mat-button>
+          <mat-icon>search</mat-icon>
+        </button>
+      </mat-form-field>
+      <br />
+    </form>
+
+    <div class="droite">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" routerLink="/inscription" routerLinkActive="router-link-active" >
+        <mat-icon>account_circle</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+
+
   </mat-toolbar>
 </p>
