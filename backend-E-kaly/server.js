@@ -9,6 +9,7 @@ mongoose.Promise = global.Promise;
 mongoose.connect(mongoDb.db).then(() => {
   console.log('Database connected');
 }, error => {
+  console.log("xxx");
   console.log("Darabase Error", error);
 });
 

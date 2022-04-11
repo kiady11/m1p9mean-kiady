@@ -1,3 +1,3 @@
 module.exports = {
-    db: 'mongodb://127.0.0.1:27017/testMongoDB'
+    db: 'mongodb+srv://kiady:<kikiabcd>@cluster0.r5ia9.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
 };
